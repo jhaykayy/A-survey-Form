@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <div class="header">
+    <h1 id="title">Survey Of A Web Developer</h1>
+    <p id="description">Kindly fill out the form below</p>
+  </div>
+
+  <form id="survey-form">
+    <label id="name-label">Name:<br>
+      <input type="text"  id="name" placeholder="First" value="" required>
+      <input type="text" id="name" placeholder="Last" value="" required> 
+    </label>
+      
+
+    <label id="email-label">Email address:
+      <input type="email" id="email" placeholder="Enter Your EmaIL" value="" required> 
+    </label>
+    
+    <label id="number-label">Age:
+      <input type="number" id="number" min="1" max="99" placeholder="How old are you?" value="" required> 
+    </label>
+
+    <label for="programming-languages" id="programming-languages">Which is your favourite programming language:
+      <select id="dropdown">
+        <option value="">(select one)</option>
+        <option value="1">JavaScript</option>
+        <option value="2">Java</option>
+        <option value="3">C++</option>
+        <option value="4">C#</option>
+        <option value="5">Ruby</option>
+        <option value="6">Python</option>
+      </select>
+    </label>
+  
+    <hr>
+    
+    <div class="developer">
+      <label class="full-stack">Are you a Full-Stack web developer?</label>
+      <input type="radio" value="yes" name="web-developer">Yes
+      <input type="radio" value="no" name="web-developer">No
+    </div>
+
+    <hr>
+    
+    <fieldset class="frameworks">
+      <legend>
+        Which of these tech frameworks are you  familiar   with?
+      </legend>
+      <label>
+        <input type="checkbox" value="boostrap" name="boostrap">Boostrap
+      </label>
+
+      <label>
+        <input type="checkbox" value="tailwind" name="tailwind">Tailwind CSS
+      </label>
+        
+      <label>
+        <input type="checkbox" value="react" name="react">React JS
+      </label>
+        
+      <label>
+        <input type="checkbox" value="angular" name="angular">Angular
+      </label>
+        
+      <label>
+        <input type="checkbox" value="vue" name="vue">Vue
+      </label>
+    </fieldset>
+
+    <hr>
+
+    <label class="ai">What is your take on AI replacing the Tech Industy?:<br>
+      <textarea placeholder="any suggestions?" rows="5" cols="40"></textarea>
+    </label>
+
+    <input id="submit" type="submit">
+  </form>
+
+</body>
+</html>
