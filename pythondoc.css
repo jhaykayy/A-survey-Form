@@ -1,0 +1,118 @@
+.python-tutorial {
+  text-align: center;
+}
+
+header {
+  font-size: 25px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  
+}
+
+#navbar {
+  background-color: rgb(175, 160, 160);
+  position: fixed;
+  width: 23%;
+  border-right: 3px solid gray;
+  overflow: scroll;
+  top: 0;
+  left: 0;
+  height: 100vh; 
+
+}
+
+header {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.text {
+  
+  padding: 0 20px;
+}
+
+#main-body {
+padding: 10px0;
+}
+
+#main-doc {
+
+width: 75%;
+margin-left: 25%;
+
+
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border-top: 3px solid gray;
+  
+}
+
+span {
+  color: red;
+}
+
+.example-div {
+  background-color: gray;
+  padding: 12px;
+  
+}
+
+.did-you-know {
+  background-color: rgb(221, 177, 94);
+  padding: 12px;
+  margin-top: 12px;
+  
+}
+
+button {
+  background-color: rgb(4, 170, 109);
+  padding: 10px;
+  width: 200px;  
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.helper2 {
+  
+}
+
+
+@media screen and (min-width: 768px) {
+#navbar {
+  width: 25%; /* Adjust width of navbar */
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+
+#main-doc {
+  margin-left: 25%;
+  width: 75%; 
+}
+}
+
+/* Define styles for smaller screens (e.g., tablets, mobile devices) */
+@media screen and (max-width: 767px) {
+#navbar {
+  width: 100%; 
+  position: static; /* Remove fixed positioning */
+  height: 250px;
+}
+
+#main-doc {
+  margin-left: 0; /* Reset margin */
+  width: 100%; 
+}
+.python-tutorial {
+  text-align: center;
+  font-size: 30px;
+}
+}
