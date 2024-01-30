@@ -1,3 +1,7 @@
+p, li {
+  color: rgb(82, 75, 75);
+}
+
 .python-tutorial {
   text-align: center;
 }
@@ -43,6 +47,17 @@ margin-left: 25%;
 
 }
 
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+.spacing {
+  margin-top: 20px;
+}
 nav a {
   display: block;
   text-decoration: none;
@@ -57,9 +72,16 @@ span {
 }
 
 .example-div {
-  background-color: gray;
+  background-color: whitesmoke;
   padding: 12px;
+  border-left: 5px solid green;
   
+}
+
+.bg {
+  background-color: gray;
+  
+  padding: 40px 20px;
 }
 
 .did-you-know {
@@ -79,14 +101,9 @@ button {
   cursor: pointer;
 }
 
-.helper2 {
-  
-}
-
-
 @media screen and (min-width: 768px) {
 #navbar {
-  width: 25%; /* Adjust width of navbar */
+  width: 25%; 
   position: fixed;
   top: 0;
   left: 0;
@@ -99,16 +116,15 @@ button {
 }
 }
 
-/* Define styles for smaller screens (e.g., tablets, mobile devices) */
 @media screen and (max-width: 767px) {
 #navbar {
   width: 100%; 
-  position: static; /* Remove fixed positioning */
+  position: static; 
   height: 250px;
 }
 
 #main-doc {
-  margin-left: 0; /* Reset margin */
+  margin-left: 0; 
   width: 100%; 
 }
 .python-tutorial {
